@@ -93,6 +93,9 @@ public abstract class TitleScreenCredits {
             credit.text.append(Text.literal(addon.authors[i]).formatted(Formatting.WHITE));
         }
 
+        credit.text.append(Text.literal("\r\n Forked By ").formatted(Formatting.GRAY));
+        credit.text.append(Text.literal("Droopies").styled(style -> style.withColor(addon.color.getPacked())));
+
         credits.add(credit);
     }
 

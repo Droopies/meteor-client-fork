@@ -96,7 +96,7 @@ public class WaypointsModule extends Module {
             double dist = PlayerUtils.distanceToCamera(pos.x, pos.y, pos.z);
 
             // Continue if this waypoint should not be rendered
-            if (dist > waypoint.maxVisible.get()) continue;
+            // if (dist > waypoint.maxVisible.get()) continue;
             if (!NametagUtils.to2D(pos, 1)) continue;
 
             // Calculate alpha and distance to center of the screen

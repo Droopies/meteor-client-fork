@@ -60,7 +60,7 @@ public class Waypoint implements ISerializable<Waypoint> {
     public Setting<Integer> maxVisible = sgVisual.add(new IntSetting.Builder()
         .name("max-visible-distance")
         .description("How far away to render the waypoint.")
-        .defaultValue(5000)
+        .defaultValue(125000)
         .build()
     );
 
